@@ -11,8 +11,9 @@ What's Cozy?
 What is this konnector about ?
 ------------------------------
 
-This konnector retrieves your <SOME DATA> and <SOME OTHER DATA> from <SERVICE>
-<YOUR DESCRIPTION HERE>
+This konnector retrieves GPS activities from Garmin Connect platform. Because Garmin does not provide a free an maintained version of its API, this connector might not be very reliable.
+Authentication, activity detail and activities lists queries were initialy discovered in [this repo](https://github.com/dawguk/php-garmin-connect), thanks [dawguk](https://github.com/dawguk) for the work.
+The connector is under development and all formats are subjects to change. Suggestions are welcome.
 
 ### Open a Pull-Request
 
@@ -28,7 +29,7 @@ Create a `konnector-dev-config.json` file at the root with your test credentials
 ```javascript
 {
   "COZY_URL": "http://cozy.tools:8080",
-  "fields": {"login":"zuck.m@rk.fb", "password":"123456"}
+  "fields": {"username":"zuck.m@rk.fb", "password":"123456"}
 }
 ```
 Then :
@@ -45,7 +46,7 @@ This connector uses [cozy-konnector-libs](https://github.com/cozy/cozy-konnector
 
 ### Maintainer
 
-The lead maintainers for this konnector is <YOUR NAME>
+The lead maintainers for this konnector is [hms](https://github.com/hmsuchier)
 
 
 ### Get in touch
@@ -62,7 +63,7 @@ You can reach the Cozy Community by:
 License
 -------
 
-<YOUR KONNECTOR NAME> is developed by <your name> and distributed under the [AGPL v3 license][agpl-3.0].
+cozy-konnector-garmin is developed by HM Suchier and distributed under the [AGPL v3 license][agpl-3.0].
 
 [cozy]: https://cozy.io "Cozy Cloud"
 [agpl-3.0]: https://www.gnu.org/licenses/agpl-3.0.html

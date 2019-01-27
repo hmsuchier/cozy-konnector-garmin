@@ -1,0 +1,1507 @@
+yarn run v1.13.0
+$ cozy-konnector-standalone
+BaseKonnector: debug : "cozyFields in fetch"  : { folder_to_save: [32m'/home/hms/projets/cozy-konnector-garmin/data'[39m,
+  account: [32m'default_account_id'[39m }
+BaseKonnector: debug : "folder details"  : { attributes: { path: [32m'/'[39m } }
+cozy-konnector-libs: info : Authenticating ...
+cozy-konnector-libs: warn : ST-03443668-DVBH9of3lDw0GciiUtIe-cas
+cozy-konnector-libs: info : IncomingMessage {
+  _readableState: 
+   ReadableState {
+     objectMode: [33mfalse[39m,
+     highWaterMark: [33m16384[39m,
+     buffer: BufferList { head: [1mnull[22m, tail: [1mnull[22m, length: [33m0[39m },
+     length: [33m0[39m,
+     pipes: [1mnull[22m,
+     pipesCount: [33m0[39m,
+     flowing: [33mtrue[39m,
+     ended: [33mtrue[39m,
+     endEmitted: [33mtrue[39m,
+     reading: [33mfalse[39m,
+     sync: [33mtrue[39m,
+     needReadable: [33mfalse[39m,
+     emittedReadable: [33mfalse[39m,
+     readableListening: [33mfalse[39m,
+     resumeScheduled: [33mfalse[39m,
+     destroyed: [33mfalse[39m,
+     defaultEncoding: [32m'utf8'[39m,
+     awaitDrain: [33m0[39m,
+     readingMore: [33mfalse[39m,
+     decoder: [1mnull[22m,
+     encoding: [1mnull[22m },
+  readable: [33mfalse[39m,
+  domain: [1mnull[22m,
+  _events: 
+   { end: [ [36m[Function: responseOnEnd][39m, [36m[Function][39m ],
+     close: [ [36m[Function][39m, [36m[Function][39m ],
+     data: [36m[Function][39m,
+     error: [36m[Function][39m },
+  _eventsCount: [33m4[39m,
+  _maxListeners: [90mundefined[39m,
+  socket: 
+   TLSSocket {
+     _tlsOptions: 
+      { pipe: [33mfalse[39m,
+        secureContext: [36m[Object][39m,
+        isServer: [33mfalse[39m,
+        requestCert: [33mtrue[39m,
+        rejectUnauthorized: [33mtrue[39m,
+        session: [90mundefined[39m,
+        NPNProtocols: [90mundefined[39m,
+        ALPNProtocols: [90mundefined[39m,
+        requestOCSP: [90mundefined[39m },
+     _secureEstablished: [33mtrue[39m,
+     _securePending: [33mfalse[39m,
+     _newSessionPending: [33mfalse[39m,
+     _controlReleased: [33mtrue[39m,
+     _SNICallback: [1mnull[22m,
+     servername: [1mnull[22m,
+     npnProtocol: [33mfalse[39m,
+     alpnProtocol: [33mfalse[39m,
+     authorized: [33mtrue[39m,
+     authorizationError: [1mnull[22m,
+     encrypted: [33mtrue[39m,
+     _events: 
+      { close: [36m[Array][39m,
+        end: [36m[Object][39m,
+        finish: [36m[Function: onSocketFinish][39m,
+        _socketEnd: [36m[Function: onSocketEnd][39m,
+        secure: [36m[Function][39m,
+        free: [36m[Function: onFree][39m,
+        agentRemove: [36m[Function: onRemove][39m,
+        drain: [36m[Function: ondrain][39m,
+        error: [36m[Function: socketErrorListener][39m },
+     _eventsCount: [33m9[39m,
+     connecting: [33mfalse[39m,
+     _hadError: [33mfalse[39m,
+     _handle: [1mnull[22m,
+     _parent: [1mnull[22m,
+     _host: [32m'connect.garmin.com'[39m,
+     _readableState: 
+      ReadableState {
+        objectMode: [33mfalse[39m,
+        highWaterMark: [33m16384[39m,
+        buffer: [36m[Object][39m,
+        length: [33m0[39m,
+        pipes: [1mnull[22m,
+        pipesCount: [33m0[39m,
+        flowing: [33mtrue[39m,
+        ended: [33mfalse[39m,
+        endEmitted: [33mfalse[39m,
+        reading: [33mtrue[39m,
+        sync: [33mfalse[39m,
+        needReadable: [33mtrue[39m,
+        emittedReadable: [33mfalse[39m,
+        readableListening: [33mfalse[39m,
+        resumeScheduled: [33mfalse[39m,
+        destroyed: [33mtrue[39m,
+        defaultEncoding: [32m'utf8'[39m,
+        awaitDrain: [33m0[39m,
+        readingMore: [33mfalse[39m,
+        decoder: [1mnull[22m,
+        encoding: [1mnull[22m },
+     readable: [33mfalse[39m,
+     domain: [1mnull[22m,
+     _maxListeners: [90mundefined[39m,
+     _writableState: 
+      WritableState {
+        objectMode: [33mfalse[39m,
+        highWaterMark: [33m16384[39m,
+        finalCalled: [33mfalse[39m,
+        needDrain: [33mfalse[39m,
+        ending: [33mtrue[39m,
+        ended: [33mtrue[39m,
+        finished: [33mtrue[39m,
+        destroyed: [33mtrue[39m,
+        decodeStrings: [33mfalse[39m,
+        defaultEncoding: [32m'utf8'[39m,
+        length: [33m0[39m,
+        writing: [33mfalse[39m,
+        corked: [33m0[39m,
+        sync: [33mfalse[39m,
+        bufferProcessing: [33mfalse[39m,
+        onwrite: [36m[Function: bound onwrite][39m,
+        writecb: [1mnull[22m,
+        writelen: [33m0[39m,
+        bufferedRequest: [1mnull[22m,
+        lastBufferedRequest: [1mnull[22m,
+        pendingcb: [33m0[39m,
+        prefinished: [33mtrue[39m,
+        errorEmitted: [33mfalse[39m,
+        bufferedRequestCount: [33m0[39m,
+        corkedRequestsFree: [36m[Object][39m },
+     writable: [33mfalse[39m,
+     allowHalfOpen: [33mfalse[39m,
+     _bytesDispatched: [33m319[39m,
+     _sockname: [1mnull[22m,
+     _pendingData: [1mnull[22m,
+     _pendingEncoding: [32m''[39m,
+     server: [90mundefined[39m,
+     _server: [1mnull[22m,
+     ssl: [1mnull[22m,
+     _requestCert: [33mtrue[39m,
+     _rejectUnauthorized: [33mtrue[39m,
+     parser: [1mnull[22m,
+     _httpMessage: 
+      ClientRequest {
+        domain: [1mnull[22m,
+        _events: [36m[Object][39m,
+        _eventsCount: [33m5[39m,
+        _maxListeners: [90mundefined[39m,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: [33m0[39m,
+        writable: [33mtrue[39m,
+        _last: [33mtrue[39m,
+        upgrading: [33mfalse[39m,
+        chunkedEncoding: [33mfalse[39m,
+        shouldKeepAlive: [33mfalse[39m,
+        useChunkedEncodingByDefault: [33mtrue[39m,
+        sendDate: [33mfalse[39m,
+        _removedConnection: [33mfalse[39m,
+        _removedContLen: [33mfalse[39m,
+        _removedTE: [33mfalse[39m,
+        _contentLength: [33m0[39m,
+        _hasBody: [33mtrue[39m,
+        _trailer: [32m''[39m,
+        finished: [33mtrue[39m,
+        _headerSent: [33mtrue[39m,
+        socket: [36m[Circular][39m,
+        connection: [36m[Circular][39m,
+        _header: [32m'POST /modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas HTTP/1.1\r\nhost: connect.garmin.com\r\ncookie: GARMIN-SSO=1; GarminNoCache=true; GARMIN-SSO-GUID=9BA7455D4B398AE8351DFC93D3CE304D2683BA34; GARMIN-SSO-CUST-GUID=09f8d71a-b4fa-4219-8f97-d360f77a69f5\r\naccept: application/json\r\ncontent-length: 0\r\nConnection: close\r\n\r\n'[39m,
+        _onPendingData: [36m[Function: noopPendingOutput][39m,
+        agent: [36m[Object][39m,
+        socketPath: [90mundefined[39m,
+        timeout: [90mundefined[39m,
+        method: [32m'POST'[39m,
+        path: [32m'/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        _ended: [33mtrue[39m,
+        res: [36m[Circular][39m,
+        aborted: [90mundefined[39m,
+        timeoutCb: [1mnull[22m,
+        upgradeOrConnect: [33mfalse[39m,
+        parser: [1mnull[22m,
+        maxHeadersCount: [1mnull[22m,
+        [[32mSymbol(outHeadersKey)[39m]: [36m[Object][39m },
+     read: [36m[Function][39m,
+     _consuming: [33mtrue[39m,
+     _idleNext: [1mnull[22m,
+     _idlePrev: [1mnull[22m,
+     _idleTimeout: [33m-1[39m,
+     [[32mSymbol(asyncId)[39m]: [33m92[39m,
+     [[32mSymbol(bytesRead)[39m]: [33m840[39m },
+  connection: 
+   TLSSocket {
+     _tlsOptions: 
+      { pipe: [33mfalse[39m,
+        secureContext: [36m[Object][39m,
+        isServer: [33mfalse[39m,
+        requestCert: [33mtrue[39m,
+        rejectUnauthorized: [33mtrue[39m,
+        session: [90mundefined[39m,
+        NPNProtocols: [90mundefined[39m,
+        ALPNProtocols: [90mundefined[39m,
+        requestOCSP: [90mundefined[39m },
+     _secureEstablished: [33mtrue[39m,
+     _securePending: [33mfalse[39m,
+     _newSessionPending: [33mfalse[39m,
+     _controlReleased: [33mtrue[39m,
+     _SNICallback: [1mnull[22m,
+     servername: [1mnull[22m,
+     npnProtocol: [33mfalse[39m,
+     alpnProtocol: [33mfalse[39m,
+     authorized: [33mtrue[39m,
+     authorizationError: [1mnull[22m,
+     encrypted: [33mtrue[39m,
+     _events: 
+      { close: [36m[Array][39m,
+        end: [36m[Object][39m,
+        finish: [36m[Function: onSocketFinish][39m,
+        _socketEnd: [36m[Function: onSocketEnd][39m,
+        secure: [36m[Function][39m,
+        free: [36m[Function: onFree][39m,
+        agentRemove: [36m[Function: onRemove][39m,
+        drain: [36m[Function: ondrain][39m,
+        error: [36m[Function: socketErrorListener][39m },
+     _eventsCount: [33m9[39m,
+     connecting: [33mfalse[39m,
+     _hadError: [33mfalse[39m,
+     _handle: [1mnull[22m,
+     _parent: [1mnull[22m,
+     _host: [32m'connect.garmin.com'[39m,
+     _readableState: 
+      ReadableState {
+        objectMode: [33mfalse[39m,
+        highWaterMark: [33m16384[39m,
+        buffer: [36m[Object][39m,
+        length: [33m0[39m,
+        pipes: [1mnull[22m,
+        pipesCount: [33m0[39m,
+        flowing: [33mtrue[39m,
+        ended: [33mfalse[39m,
+        endEmitted: [33mfalse[39m,
+        reading: [33mtrue[39m,
+        sync: [33mfalse[39m,
+        needReadable: [33mtrue[39m,
+        emittedReadable: [33mfalse[39m,
+        readableListening: [33mfalse[39m,
+        resumeScheduled: [33mfalse[39m,
+        destroyed: [33mtrue[39m,
+        defaultEncoding: [32m'utf8'[39m,
+        awaitDrain: [33m0[39m,
+        readingMore: [33mfalse[39m,
+        decoder: [1mnull[22m,
+        encoding: [1mnull[22m },
+     readable: [33mfalse[39m,
+     domain: [1mnull[22m,
+     _maxListeners: [90mundefined[39m,
+     _writableState: 
+      WritableState {
+        objectMode: [33mfalse[39m,
+        highWaterMark: [33m16384[39m,
+        finalCalled: [33mfalse[39m,
+        needDrain: [33mfalse[39m,
+        ending: [33mtrue[39m,
+        ended: [33mtrue[39m,
+        finished: [33mtrue[39m,
+        destroyed: [33mtrue[39m,
+        decodeStrings: [33mfalse[39m,
+        defaultEncoding: [32m'utf8'[39m,
+        length: [33m0[39m,
+        writing: [33mfalse[39m,
+        corked: [33m0[39m,
+        sync: [33mfalse[39m,
+        bufferProcessing: [33mfalse[39m,
+        onwrite: [36m[Function: bound onwrite][39m,
+        writecb: [1mnull[22m,
+        writelen: [33m0[39m,
+        bufferedRequest: [1mnull[22m,
+        lastBufferedRequest: [1mnull[22m,
+        pendingcb: [33m0[39m,
+        prefinished: [33mtrue[39m,
+        errorEmitted: [33mfalse[39m,
+        bufferedRequestCount: [33m0[39m,
+        corkedRequestsFree: [36m[Object][39m },
+     writable: [33mfalse[39m,
+     allowHalfOpen: [33mfalse[39m,
+     _bytesDispatched: [33m319[39m,
+     _sockname: [1mnull[22m,
+     _pendingData: [1mnull[22m,
+     _pendingEncoding: [32m''[39m,
+     server: [90mundefined[39m,
+     _server: [1mnull[22m,
+     ssl: [1mnull[22m,
+     _requestCert: [33mtrue[39m,
+     _rejectUnauthorized: [33mtrue[39m,
+     parser: [1mnull[22m,
+     _httpMessage: 
+      ClientRequest {
+        domain: [1mnull[22m,
+        _events: [36m[Object][39m,
+        _eventsCount: [33m5[39m,
+        _maxListeners: [90mundefined[39m,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: [33m0[39m,
+        writable: [33mtrue[39m,
+        _last: [33mtrue[39m,
+        upgrading: [33mfalse[39m,
+        chunkedEncoding: [33mfalse[39m,
+        shouldKeepAlive: [33mfalse[39m,
+        useChunkedEncodingByDefault: [33mtrue[39m,
+        sendDate: [33mfalse[39m,
+        _removedConnection: [33mfalse[39m,
+        _removedContLen: [33mfalse[39m,
+        _removedTE: [33mfalse[39m,
+        _contentLength: [33m0[39m,
+        _hasBody: [33mtrue[39m,
+        _trailer: [32m''[39m,
+        finished: [33mtrue[39m,
+        _headerSent: [33mtrue[39m,
+        socket: [36m[Circular][39m,
+        connection: [36m[Circular][39m,
+        _header: [32m'POST /modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas HTTP/1.1\r\nhost: connect.garmin.com\r\ncookie: GARMIN-SSO=1; GarminNoCache=true; GARMIN-SSO-GUID=9BA7455D4B398AE8351DFC93D3CE304D2683BA34; GARMIN-SSO-CUST-GUID=09f8d71a-b4fa-4219-8f97-d360f77a69f5\r\naccept: application/json\r\ncontent-length: 0\r\nConnection: close\r\n\r\n'[39m,
+        _onPendingData: [36m[Function: noopPendingOutput][39m,
+        agent: [36m[Object][39m,
+        socketPath: [90mundefined[39m,
+        timeout: [90mundefined[39m,
+        method: [32m'POST'[39m,
+        path: [32m'/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        _ended: [33mtrue[39m,
+        res: [36m[Circular][39m,
+        aborted: [90mundefined[39m,
+        timeoutCb: [1mnull[22m,
+        upgradeOrConnect: [33mfalse[39m,
+        parser: [1mnull[22m,
+        maxHeadersCount: [1mnull[22m,
+        [[32mSymbol(outHeadersKey)[39m]: [36m[Object][39m },
+     read: [36m[Function][39m,
+     _consuming: [33mtrue[39m,
+     _idleNext: [1mnull[22m,
+     _idlePrev: [1mnull[22m,
+     _idleTimeout: [33m-1[39m,
+     [[32mSymbol(asyncId)[39m]: [33m92[39m,
+     [[32mSymbol(bytesRead)[39m]: [33m840[39m },
+  httpVersionMajor: [33m1[39m,
+  httpVersionMinor: [33m1[39m,
+  httpVersion: [32m'1.1'[39m,
+  complete: [33mtrue[39m,
+  headers: 
+   { date: [32m'Sat, 26 Jan 2019 17:29:02 GMT'[39m,
+     [32m'content-length'[39m: [32m'0'[39m,
+     connection: [32m'close'[39m,
+     [32m'set-cookie'[39m: 
+      [ [32m'__cfduid=d7cfeda6d735f2f1d1457aebd547e5e2f1548523741; expires=Sun, 26-Jan-20 17:29:01 GMT; path=/; domain=.connect.garmin.com; HttpOnly; Secure'[39m,
+        [32m'SESSIONID=9106ff9c-fc41-4f29-91cb-6b9c2574d684; Path=/; Secure; HttpOnly'[39m ],
+     [32m'cache-control'[39m: [32m'no-cache, no-store, max-age=0, must-revalidate'[39m,
+     expires: [32m'0'[39m,
+     location: [32m'https://connect.garmin.com/modern/'[39m,
+     pragma: [32m'no-cache'[39m,
+     [32m'strict-transport-security'[39m: [32m'max-age=31536000 ; includeSubDomains'[39m,
+     [32m'x-content-type-options'[39m: [32m'nosniff'[39m,
+     [32m'x-frame-options'[39m: [32m'DENY'[39m,
+     [32m'x-vcap-request-id'[39m: [32m'82b94461-a0de-4356-532b-06963c968ffd'[39m,
+     [32m'x-xss-protection'[39m: [32m'1; mode=block'[39m,
+     [32m'expect-ct'[39m: [32m'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'[39m,
+     server: [32m'cloudflare'[39m,
+     [32m'cf-ray'[39m: [32m'49f4b30ade39a863-CDG'[39m },
+  rawHeaders: 
+   [ [32m'Date'[39m,
+     [32m'Sat, 26 Jan 2019 17:29:02 GMT'[39m,
+     [32m'Content-Length'[39m,
+     [32m'0'[39m,
+     [32m'Connection'[39m,
+     [32m'close'[39m,
+     [32m'Set-Cookie'[39m,
+     [32m'__cfduid=d7cfeda6d735f2f1d1457aebd547e5e2f1548523741; expires=Sun, 26-Jan-20 17:29:01 GMT; path=/; domain=.connect.garmin.com; HttpOnly; Secure'[39m,
+     [32m'Cache-Control'[39m,
+     [32m'no-cache, no-store, max-age=0, must-revalidate'[39m,
+     [32m'Expires'[39m,
+     [32m'0'[39m,
+     [32m'Location'[39m,
+     [32m'https://connect.garmin.com/modern/'[39m,
+     [32m'Pragma'[39m,
+     [32m'no-cache'[39m,
+     [32m'Set-Cookie'[39m,
+     [32m'SESSIONID=9106ff9c-fc41-4f29-91cb-6b9c2574d684; Path=/; Secure; HttpOnly'[39m,
+     [32m'Strict-Transport-Security'[39m,
+     [32m'max-age=31536000 ; includeSubDomains'[39m,
+     [32m'X-Content-Type-Options'[39m,
+     [32m'nosniff'[39m,
+     [32m'X-Frame-Options'[39m,
+     [32m'DENY'[39m,
+     [32m'X-Vcap-Request-Id'[39m,
+     [32m'82b94461-a0de-4356-532b-06963c968ffd'[39m,
+     [32m'X-Xss-Protection'[39m,
+     [32m'1; mode=block'[39m,
+     [32m'Expect-CT'[39m,
+     [32m'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'[39m,
+     [32m'Server'[39m,
+     [32m'cloudflare'[39m,
+     [32m'CF-RAY'[39m,
+     [32m'49f4b30ade39a863-CDG'[39m ],
+  trailers: {},
+  rawTrailers: [],
+  upgrade: [33mfalse[39m,
+  url: [32m''[39m,
+  method: [1mnull[22m,
+  statusCode: [33m302[39m,
+  statusMessage: [32m'Found'[39m,
+  client: 
+   TLSSocket {
+     _tlsOptions: 
+      { pipe: [33mfalse[39m,
+        secureContext: [36m[Object][39m,
+        isServer: [33mfalse[39m,
+        requestCert: [33mtrue[39m,
+        rejectUnauthorized: [33mtrue[39m,
+        session: [90mundefined[39m,
+        NPNProtocols: [90mundefined[39m,
+        ALPNProtocols: [90mundefined[39m,
+        requestOCSP: [90mundefined[39m },
+     _secureEstablished: [33mtrue[39m,
+     _securePending: [33mfalse[39m,
+     _newSessionPending: [33mfalse[39m,
+     _controlReleased: [33mtrue[39m,
+     _SNICallback: [1mnull[22m,
+     servername: [1mnull[22m,
+     npnProtocol: [33mfalse[39m,
+     alpnProtocol: [33mfalse[39m,
+     authorized: [33mtrue[39m,
+     authorizationError: [1mnull[22m,
+     encrypted: [33mtrue[39m,
+     _events: 
+      { close: [36m[Array][39m,
+        end: [36m[Object][39m,
+        finish: [36m[Function: onSocketFinish][39m,
+        _socketEnd: [36m[Function: onSocketEnd][39m,
+        secure: [36m[Function][39m,
+        free: [36m[Function: onFree][39m,
+        agentRemove: [36m[Function: onRemove][39m,
+        drain: [36m[Function: ondrain][39m,
+        error: [36m[Function: socketErrorListener][39m },
+     _eventsCount: [33m9[39m,
+     connecting: [33mfalse[39m,
+     _hadError: [33mfalse[39m,
+     _handle: [1mnull[22m,
+     _parent: [1mnull[22m,
+     _host: [32m'connect.garmin.com'[39m,
+     _readableState: 
+      ReadableState {
+        objectMode: [33mfalse[39m,
+        highWaterMark: [33m16384[39m,
+        buffer: [36m[Object][39m,
+        length: [33m0[39m,
+        pipes: [1mnull[22m,
+        pipesCount: [33m0[39m,
+        flowing: [33mtrue[39m,
+        ended: [33mfalse[39m,
+        endEmitted: [33mfalse[39m,
+        reading: [33mtrue[39m,
+        sync: [33mfalse[39m,
+        needReadable: [33mtrue[39m,
+        emittedReadable: [33mfalse[39m,
+        readableListening: [33mfalse[39m,
+        resumeScheduled: [33mfalse[39m,
+        destroyed: [33mtrue[39m,
+        defaultEncoding: [32m'utf8'[39m,
+        awaitDrain: [33m0[39m,
+        readingMore: [33mfalse[39m,
+        decoder: [1mnull[22m,
+        encoding: [1mnull[22m },
+     readable: [33mfalse[39m,
+     domain: [1mnull[22m,
+     _maxListeners: [90mundefined[39m,
+     _writableState: 
+      WritableState {
+        objectMode: [33mfalse[39m,
+        highWaterMark: [33m16384[39m,
+        finalCalled: [33mfalse[39m,
+        needDrain: [33mfalse[39m,
+        ending: [33mtrue[39m,
+        ended: [33mtrue[39m,
+        finished: [33mtrue[39m,
+        destroyed: [33mtrue[39m,
+        decodeStrings: [33mfalse[39m,
+        defaultEncoding: [32m'utf8'[39m,
+        length: [33m0[39m,
+        writing: [33mfalse[39m,
+        corked: [33m0[39m,
+        sync: [33mfalse[39m,
+        bufferProcessing: [33mfalse[39m,
+        onwrite: [36m[Function: bound onwrite][39m,
+        writecb: [1mnull[22m,
+        writelen: [33m0[39m,
+        bufferedRequest: [1mnull[22m,
+        lastBufferedRequest: [1mnull[22m,
+        pendingcb: [33m0[39m,
+        prefinished: [33mtrue[39m,
+        errorEmitted: [33mfalse[39m,
+        bufferedRequestCount: [33m0[39m,
+        corkedRequestsFree: [36m[Object][39m },
+     writable: [33mfalse[39m,
+     allowHalfOpen: [33mfalse[39m,
+     _bytesDispatched: [33m319[39m,
+     _sockname: [1mnull[22m,
+     _pendingData: [1mnull[22m,
+     _pendingEncoding: [32m''[39m,
+     server: [90mundefined[39m,
+     _server: [1mnull[22m,
+     ssl: [1mnull[22m,
+     _requestCert: [33mtrue[39m,
+     _rejectUnauthorized: [33mtrue[39m,
+     parser: [1mnull[22m,
+     _httpMessage: 
+      ClientRequest {
+        domain: [1mnull[22m,
+        _events: [36m[Object][39m,
+        _eventsCount: [33m5[39m,
+        _maxListeners: [90mundefined[39m,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: [33m0[39m,
+        writable: [33mtrue[39m,
+        _last: [33mtrue[39m,
+        upgrading: [33mfalse[39m,
+        chunkedEncoding: [33mfalse[39m,
+        shouldKeepAlive: [33mfalse[39m,
+        useChunkedEncodingByDefault: [33mtrue[39m,
+        sendDate: [33mfalse[39m,
+        _removedConnection: [33mfalse[39m,
+        _removedContLen: [33mfalse[39m,
+        _removedTE: [33mfalse[39m,
+        _contentLength: [33m0[39m,
+        _hasBody: [33mtrue[39m,
+        _trailer: [32m''[39m,
+        finished: [33mtrue[39m,
+        _headerSent: [33mtrue[39m,
+        socket: [36m[Circular][39m,
+        connection: [36m[Circular][39m,
+        _header: [32m'POST /modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas HTTP/1.1\r\nhost: connect.garmin.com\r\ncookie: GARMIN-SSO=1; GarminNoCache=true; GARMIN-SSO-GUID=9BA7455D4B398AE8351DFC93D3CE304D2683BA34; GARMIN-SSO-CUST-GUID=09f8d71a-b4fa-4219-8f97-d360f77a69f5\r\naccept: application/json\r\ncontent-length: 0\r\nConnection: close\r\n\r\n'[39m,
+        _onPendingData: [36m[Function: noopPendingOutput][39m,
+        agent: [36m[Object][39m,
+        socketPath: [90mundefined[39m,
+        timeout: [90mundefined[39m,
+        method: [32m'POST'[39m,
+        path: [32m'/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        _ended: [33mtrue[39m,
+        res: [36m[Circular][39m,
+        aborted: [90mundefined[39m,
+        timeoutCb: [1mnull[22m,
+        upgradeOrConnect: [33mfalse[39m,
+        parser: [1mnull[22m,
+        maxHeadersCount: [1mnull[22m,
+        [[32mSymbol(outHeadersKey)[39m]: [36m[Object][39m },
+     read: [36m[Function][39m,
+     _consuming: [33mtrue[39m,
+     _idleNext: [1mnull[22m,
+     _idlePrev: [1mnull[22m,
+     _idleTimeout: [33m-1[39m,
+     [[32mSymbol(asyncId)[39m]: [33m92[39m,
+     [[32mSymbol(bytesRead)[39m]: [33m840[39m },
+  _consuming: [33mtrue[39m,
+  _dumped: [33mfalse[39m,
+  req: 
+   ClientRequest {
+     domain: [1mnull[22m,
+     _events: 
+      { socket: [36m[Function][39m,
+        response: [36m[Function: bound ][39m,
+        error: [36m[Function: bound ][39m,
+        drain: [36m[Function][39m,
+        prefinish: [36m[Function: requestOnPrefinish][39m },
+     _eventsCount: [33m5[39m,
+     _maxListeners: [90mundefined[39m,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: [33m0[39m,
+     writable: [33mtrue[39m,
+     _last: [33mtrue[39m,
+     upgrading: [33mfalse[39m,
+     chunkedEncoding: [33mfalse[39m,
+     shouldKeepAlive: [33mfalse[39m,
+     useChunkedEncodingByDefault: [33mtrue[39m,
+     sendDate: [33mfalse[39m,
+     _removedConnection: [33mfalse[39m,
+     _removedContLen: [33mfalse[39m,
+     _removedTE: [33mfalse[39m,
+     _contentLength: [33m0[39m,
+     _hasBody: [33mtrue[39m,
+     _trailer: [32m''[39m,
+     finished: [33mtrue[39m,
+     _headerSent: [33mtrue[39m,
+     socket: 
+      TLSSocket {
+        _tlsOptions: [36m[Object][39m,
+        _secureEstablished: [33mtrue[39m,
+        _securePending: [33mfalse[39m,
+        _newSessionPending: [33mfalse[39m,
+        _controlReleased: [33mtrue[39m,
+        _SNICallback: [1mnull[22m,
+        servername: [1mnull[22m,
+        npnProtocol: [33mfalse[39m,
+        alpnProtocol: [33mfalse[39m,
+        authorized: [33mtrue[39m,
+        authorizationError: [1mnull[22m,
+        encrypted: [33mtrue[39m,
+        _events: [36m[Object][39m,
+        _eventsCount: [33m9[39m,
+        connecting: [33mfalse[39m,
+        _hadError: [33mfalse[39m,
+        _handle: [1mnull[22m,
+        _parent: [1mnull[22m,
+        _host: [32m'connect.garmin.com'[39m,
+        _readableState: [36m[Object][39m,
+        readable: [33mfalse[39m,
+        domain: [1mnull[22m,
+        _maxListeners: [90mundefined[39m,
+        _writableState: [36m[Object][39m,
+        writable: [33mfalse[39m,
+        allowHalfOpen: [33mfalse[39m,
+        _bytesDispatched: [33m319[39m,
+        _sockname: [1mnull[22m,
+        _pendingData: [1mnull[22m,
+        _pendingEncoding: [32m''[39m,
+        server: [90mundefined[39m,
+        _server: [1mnull[22m,
+        ssl: [1mnull[22m,
+        _requestCert: [33mtrue[39m,
+        _rejectUnauthorized: [33mtrue[39m,
+        parser: [1mnull[22m,
+        _httpMessage: [36m[Circular][39m,
+        read: [36m[Function][39m,
+        _consuming: [33mtrue[39m,
+        _idleNext: [1mnull[22m,
+        _idlePrev: [1mnull[22m,
+        _idleTimeout: [33m-1[39m,
+        [[32mSymbol(asyncId)[39m]: [33m92[39m,
+        [[32mSymbol(bytesRead)[39m]: [33m840[39m },
+     connection: 
+      TLSSocket {
+        _tlsOptions: [36m[Object][39m,
+        _secureEstablished: [33mtrue[39m,
+        _securePending: [33mfalse[39m,
+        _newSessionPending: [33mfalse[39m,
+        _controlReleased: [33mtrue[39m,
+        _SNICallback: [1mnull[22m,
+        servername: [1mnull[22m,
+        npnProtocol: [33mfalse[39m,
+        alpnProtocol: [33mfalse[39m,
+        authorized: [33mtrue[39m,
+        authorizationError: [1mnull[22m,
+        encrypted: [33mtrue[39m,
+        _events: [36m[Object][39m,
+        _eventsCount: [33m9[39m,
+        connecting: [33mfalse[39m,
+        _hadError: [33mfalse[39m,
+        _handle: [1mnull[22m,
+        _parent: [1mnull[22m,
+        _host: [32m'connect.garmin.com'[39m,
+        _readableState: [36m[Object][39m,
+        readable: [33mfalse[39m,
+        domain: [1mnull[22m,
+        _maxListeners: [90mundefined[39m,
+        _writableState: [36m[Object][39m,
+        writable: [33mfalse[39m,
+        allowHalfOpen: [33mfalse[39m,
+        _bytesDispatched: [33m319[39m,
+        _sockname: [1mnull[22m,
+        _pendingData: [1mnull[22m,
+        _pendingEncoding: [32m''[39m,
+        server: [90mundefined[39m,
+        _server: [1mnull[22m,
+        ssl: [1mnull[22m,
+        _requestCert: [33mtrue[39m,
+        _rejectUnauthorized: [33mtrue[39m,
+        parser: [1mnull[22m,
+        _httpMessage: [36m[Circular][39m,
+        read: [36m[Function][39m,
+        _consuming: [33mtrue[39m,
+        _idleNext: [1mnull[22m,
+        _idlePrev: [1mnull[22m,
+        _idleTimeout: [33m-1[39m,
+        [[32mSymbol(asyncId)[39m]: [33m92[39m,
+        [[32mSymbol(bytesRead)[39m]: [33m840[39m },
+     _header: [32m'POST /modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas HTTP/1.1\r\nhost: connect.garmin.com\r\ncookie: GARMIN-SSO=1; GarminNoCache=true; GARMIN-SSO-GUID=9BA7455D4B398AE8351DFC93D3CE304D2683BA34; GARMIN-SSO-CUST-GUID=09f8d71a-b4fa-4219-8f97-d360f77a69f5\r\naccept: application/json\r\ncontent-length: 0\r\nConnection: close\r\n\r\n'[39m,
+     _onPendingData: [36m[Function: noopPendingOutput][39m,
+     agent: 
+      Agent {
+        domain: [1mnull[22m,
+        _events: [36m[Object][39m,
+        _eventsCount: [33m1[39m,
+        _maxListeners: [90mundefined[39m,
+        defaultPort: [33m443[39m,
+        protocol: [32m'https:'[39m,
+        options: [36m[Object][39m,
+        requests: {},
+        sockets: [36m[Object][39m,
+        freeSockets: {},
+        keepAliveMsecs: [33m1000[39m,
+        keepAlive: [33mfalse[39m,
+        maxSockets: [33mInfinity[39m,
+        maxFreeSockets: [33m256[39m,
+        maxCachedSessions: [33m100[39m,
+        _sessionCache: [36m[Object][39m },
+     socketPath: [90mundefined[39m,
+     timeout: [90mundefined[39m,
+     method: [32m'POST'[39m,
+     path: [32m'/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+     _ended: [33mtrue[39m,
+     res: [36m[Circular][39m,
+     aborted: [90mundefined[39m,
+     timeoutCb: [1mnull[22m,
+     upgradeOrConnect: [33mfalse[39m,
+     parser: [1mnull[22m,
+     maxHeadersCount: [1mnull[22m,
+     [[32mSymbol(outHeadersKey)[39m]: 
+      { host: [36m[Array][39m,
+        cookie: [36m[Array][39m,
+        accept: [36m[Array][39m,
+        [32m'content-length'[39m: [36m[Array][39m } },
+  request: 
+   Request {
+     domain: [1mnull[22m,
+     _events: 
+      { error: [36m[Function: bound ][39m,
+        complete: [36m[Function: bound ][39m,
+        pipe: [36m[Function][39m,
+        data: [36m[Function][39m,
+        end: [36m[Function][39m },
+     _eventsCount: [33m5[39m,
+     _maxListeners: [90mundefined[39m,
+     headers: 
+      { cookie: [32m'GARMIN-SSO=1; GarminNoCache=true; GARMIN-SSO-GUID=9BA7455D4B398AE8351DFC93D3CE304D2683BA34; GARMIN-SSO-CUST-GUID=09f8d71a-b4fa-4219-8f97-d360f77a69f5'[39m,
+        accept: [32m'application/json'[39m,
+        [32m'content-length'[39m: [33m0[39m },
+     followAllRedirects: [33mfalse[39m,
+     simple: [33mfalse[39m,
+     resolveWithFullResponse: [33mtrue[39m,
+     method: [32m'POST'[39m,
+     readable: [33mtrue[39m,
+     writable: [33mtrue[39m,
+     explicitMethod: [33mtrue[39m,
+     _qs: 
+      Querystring {
+        request: [36m[Circular][39m,
+        lib: [36m[Object][39m,
+        useQuerystring: [90mundefined[39m,
+        parseOptions: {},
+        stringifyOptions: {} },
+     _auth: 
+      Auth {
+        request: [36m[Circular][39m,
+        hasAuth: [33mfalse[39m,
+        sentAuth: [33mfalse[39m,
+        bearerToken: [1mnull[22m,
+        user: [1mnull[22m,
+        pass: [1mnull[22m },
+     _oauth: OAuth { request: [36m[Circular][39m, params: [1mnull[22m },
+     _multipart: 
+      Multipart {
+        request: [36m[Circular][39m,
+        boundary: [32m'05c5a3fe-0ae6-4a7f-a499-3e95cc2ff793'[39m,
+        chunked: [33mfalse[39m,
+        body: [1mnull[22m },
+     _redirect: 
+      Redirect {
+        request: [36m[Circular][39m,
+        followRedirect: [33mtrue[39m,
+        followRedirects: [33mtrue[39m,
+        followAllRedirects: [33mfalse[39m,
+        followOriginalHttpMethod: [33mfalse[39m,
+        allowRedirect: [36m[Function][39m,
+        maxRedirects: [33m10[39m,
+        redirects: [],
+        redirectsFollowed: [33m0[39m,
+        removeRefererHeader: [33mfalse[39m },
+     _tunnel: 
+      Tunnel {
+        request: [36m[Circular][39m,
+        proxyHeaderWhiteList: [36m[Array][39m,
+        proxyHeaderExclusiveList: [] },
+     _rp_resolve: [36m[Function][39m,
+     _rp_reject: [36m[Function][39m,
+     _rp_promise: 
+      Promise {
+        _bitField: [33m33554433[39m,
+        _fulfillmentHandler0: [36m[Function][39m,
+        _rejectionHandler0: [36m[Circular][39m,
+        _promise0: [90mundefined[39m,
+        _receiver0: [90mundefined[39m,
+        _onCancelField: [36m[Function][39m,
+        _branchesRemainingToCancel: [33m1[39m },
+     _rp_callbackOrig: [90mundefined[39m,
+     callback: [36m[Function][39m,
+     _rp_options: 
+      { debug: [33mfalse[39m,
+        json: [33mtrue[39m,
+        headers: {},
+        followAllRedirects: [33mfalse[39m,
+        url: [32m'https://connect.garmin.com/modern/'[39m,
+        qs: [36m[Object][39m,
+        simple: [33mfalse[39m,
+        resolveWithFullResponse: [33mtrue[39m,
+        jar: [36m[Object][39m,
+        method: [32m'POST'[39m,
+        callback: [36m[Function: RP$callback][39m,
+        transform: [90mundefined[39m,
+        transform2xxOnly: [33mfalse[39m },
+     setHeader: [36m[Function][39m,
+     hasHeader: [36m[Function][39m,
+     getHeader: [36m[Function][39m,
+     removeHeader: [36m[Function][39m,
+     localAddress: [90mundefined[39m,
+     pool: {},
+     dests: [],
+     __isRequestRequest: [33mtrue[39m,
+     _callback: [36m[Function: RP$callback][39m,
+     uri: 
+      Url {
+        protocol: [32m'https:'[39m,
+        slashes: [33mtrue[39m,
+        auth: [1mnull[22m,
+        host: [32m'connect.garmin.com'[39m,
+        port: [1mnull[22m,
+        hostname: [32m'connect.garmin.com'[39m,
+        hash: [1mnull[22m,
+        search: [32m'?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        query: [32m'ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        pathname: [32m'/modern/'[39m,
+        path: [32m'/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        href: [32m'https://connect.garmin.com/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m },
+     proxy: [1mnull[22m,
+     tunnel: [33mtrue[39m,
+     setHost: [33mtrue[39m,
+     originalCookieHeader: [90mundefined[39m,
+     _jar: RequestJar { _jar: [36m[Object][39m },
+     port: [33m443[39m,
+     host: [32m'connect.garmin.com'[39m,
+     url: 
+      Url {
+        protocol: [32m'https:'[39m,
+        slashes: [33mtrue[39m,
+        auth: [1mnull[22m,
+        host: [32m'connect.garmin.com'[39m,
+        port: [1mnull[22m,
+        hostname: [32m'connect.garmin.com'[39m,
+        hash: [1mnull[22m,
+        search: [32m'?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        query: [32m'ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        pathname: [32m'/modern/'[39m,
+        path: [32m'/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        href: [32m'https://connect.garmin.com/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m },
+     path: [32m'/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+     _json: [33mtrue[39m,
+     httpModule: 
+      { Server: [36m[Object][39m,
+        createServer: [36m[Function: createServer][39m,
+        globalAgent: [36m[Object][39m,
+        Agent: [36m[Object][39m,
+        request: [36m[Function: request][39m,
+        get: [36m[Function: get][39m },
+     agentClass: { [Function: Agent] super_: [36m[Object][39m },
+     agent: 
+      Agent {
+        domain: [1mnull[22m,
+        _events: [36m[Object][39m,
+        _eventsCount: [33m1[39m,
+        _maxListeners: [90mundefined[39m,
+        defaultPort: [33m443[39m,
+        protocol: [32m'https:'[39m,
+        options: [36m[Object][39m,
+        requests: {},
+        sockets: [36m[Object][39m,
+        freeSockets: {},
+        keepAliveMsecs: [33m1000[39m,
+        keepAlive: [33mfalse[39m,
+        maxSockets: [33mInfinity[39m,
+        maxFreeSockets: [33m256[39m,
+        maxCachedSessions: [33m100[39m,
+        _sessionCache: [36m[Object][39m },
+     _started: [33mtrue[39m,
+     href: [32m'https://connect.garmin.com/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+     req: 
+      ClientRequest {
+        domain: [1mnull[22m,
+        _events: [36m[Object][39m,
+        _eventsCount: [33m5[39m,
+        _maxListeners: [90mundefined[39m,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: [33m0[39m,
+        writable: [33mtrue[39m,
+        _last: [33mtrue[39m,
+        upgrading: [33mfalse[39m,
+        chunkedEncoding: [33mfalse[39m,
+        shouldKeepAlive: [33mfalse[39m,
+        useChunkedEncodingByDefault: [33mtrue[39m,
+        sendDate: [33mfalse[39m,
+        _removedConnection: [33mfalse[39m,
+        _removedContLen: [33mfalse[39m,
+        _removedTE: [33mfalse[39m,
+        _contentLength: [33m0[39m,
+        _hasBody: [33mtrue[39m,
+        _trailer: [32m''[39m,
+        finished: [33mtrue[39m,
+        _headerSent: [33mtrue[39m,
+        socket: [36m[Object][39m,
+        connection: [36m[Object][39m,
+        _header: [32m'POST /modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas HTTP/1.1\r\nhost: connect.garmin.com\r\ncookie: GARMIN-SSO=1; GarminNoCache=true; GARMIN-SSO-GUID=9BA7455D4B398AE8351DFC93D3CE304D2683BA34; GARMIN-SSO-CUST-GUID=09f8d71a-b4fa-4219-8f97-d360f77a69f5\r\naccept: application/json\r\ncontent-length: 0\r\nConnection: close\r\n\r\n'[39m,
+        _onPendingData: [36m[Function: noopPendingOutput][39m,
+        agent: [36m[Object][39m,
+        socketPath: [90mundefined[39m,
+        timeout: [90mundefined[39m,
+        method: [32m'POST'[39m,
+        path: [32m'/modern/?ticket=ST-03443668-DVBH9of3lDw0GciiUtIe-cas'[39m,
+        _ended: [33mtrue[39m,
+        res: [36m[Circular][39m,
+        aborted: [90mundefined[39m,
+        timeoutCb: [1mnull[22m,
+        upgradeOrConnect: [33mfalse[39m,
+        parser: [1mnull[22m,
+        maxHeadersCount: [1mnull[22m,
+        [[32mSymbol(outHeadersKey)[39m]: [36m[Object][39m },
+     ntick: [33mtrue[39m,
+     response: [36m[Circular][39m,
+     originalHost: [32m'connect.garmin.com'[39m,
+     originalHostHeaderName: [32m'host'[39m,
+     responseContent: [36m[Circular][39m,
+     _ended: [33mtrue[39m,
+     _callbackCalled: [33mtrue[39m },
+  toJSON: [36m[Function: responseToJSON][39m,
+  caseless: 
+   Caseless {
+     dict: 
+      { date: [32m'Sat, 26 Jan 2019 17:29:02 GMT'[39m,
+        [32m'content-length'[39m: [32m'0'[39m,
+        connection: [32m'close'[39m,
+        [32m'set-cookie'[39m: [36m[Array][39m,
+        [32m'cache-control'[39m: [32m'no-cache, no-store, max-age=0, must-revalidate'[39m,
+        expires: [32m'0'[39m,
+        location: [32m'https://connect.garmin.com/modern/'[39m,
+        pragma: [32m'no-cache'[39m,
+        [32m'strict-transport-security'[39m: [32m'max-age=31536000 ; includeSubDomains'[39m,
+        [32m'x-content-type-options'[39m: [32m'nosniff'[39m,
+        [32m'x-frame-options'[39m: [32m'DENY'[39m,
+        [32m'x-vcap-request-id'[39m: [32m'82b94461-a0de-4356-532b-06963c968ffd'[39m,
+        [32m'x-xss-protection'[39m: [32m'1; mode=block'[39m,
+        [32m'expect-ct'[39m: [32m'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'[39m,
+        server: [32m'cloudflare'[39m,
+        [32m'cf-ray'[39m: [32m'49f4b30ade39a863-CDG'[39m } },
+  read: [36m[Function][39m }
+cozy-konnector-libs: info : Successfully logged in
+cozy-konnector-libs: info : Fetching the list of activities
+cozy-konnector-libs: info : <!DOCTYPE html>
+
+<html class="signed-out">
+
+
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Garmin Connect</title>
+
+    
+
+
+
+    <meta property="fb:app_id" content="169380733077633" />
+    <meta property="fb:admins" content="100001671230938" />
+
+    <meta property="og:image" />
+    <meta property="og:url" content="https://connect.garmin.com/modern/activity/null/share/null?lang=null&amp;t=null" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" />
+    <meta property="og:latitude" />
+    <meta property="og:longitude" />
+
+
+
+
+
+
+    
+
+    <link rel="shortcut icon" href="/modern/images/favicon.ico" />
+
+    <script type="text/javascript">
+        // Prevent errors in IE.
+        if (typeof console == "undefined" || typeof console.log == "undefined") var console = { log: function() {} };
+    </script>
+
+    <!-- Connect Styles -->
+    
+        <link rel="stylesheet" type="text/css" href="/modern/css/dropzone.min.css?bust=4.13C.2.0" />
+        <link rel="stylesheet" type="text/css" href="/modern/css/style.min.css?bust=4.13C.2.0" />
+        <link rel="stylesheet" type="text/css" href="/modern/css/style.golf.min.css?bust=4.13C.2.0" />
+        <link rel="stylesheet" type="text/css" href="/modern/css/style.marine.min.css?bust=4.13C.2.0" />
+    
+    
+
+    <!-- to be modify the google fonts in cdn here -->
+    <!--garmin.cn-->
+
+    
+    
+        <!-- FONTS -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,cyrillic-ext,greek-ext,vietnamese" />
+    
+    
+    
+
+    <!-- JS Frameworks -->
+    <script type="text/javascript" src="/modern/main/js/lib/require.js?bust=4.13C.2.0"><!-- required for FF3 and Opera --></script>
+
+    
+
+
+    <title>Connect</title>
+</head>
+
+
+<body>
+<a href="connectagent://launch" id="notify-agent" style="display: hidden" tabindex="-1"><!-- dummy comment --></a>
+
+
+
+<div class="connect-container">
+
+    <nav class="main-nav hide"><!-- main navigation --></nav>
+
+    <div class="react-global-modal"><!-- react-global-modal --></div>
+
+    <div class="main-body">
+        <!-- Header -->
+        
+
+
+<div class="header" id="global-header-wrapper">
+    <div class="container">
+                <div class="navigation">
+            <a class="logo pull-left" href="/en-US/" title="Connect - Powered by Garmin">Garmin Connect</a>
+            <ul class="nav nav-pills pull-left">
+                
+                <li class="nav-home"><a href="/en-US/">Home</a></li>
+                
+                <li class="nav-features"><a href="/en-US/features/">Features</a></li>
+                
+                <li class="nav-started"><a href="/en-US/start/">Get Started</a></li>
+                            </ul>
+        </div>                <div class="utility pull-right">
+            <ul class="nav nav-pills">
+                <li class="nav-signin-container">
+                    <a class="nav-signin" href="/en-US/signin">Sign In</a>
+                </li>
+                <li class="nav-dash-container">
+                    <a class="nav-dashboard" href="/user-dashboard/check">Dashboard</a>
+                </li>
+                <li class="nav-help-container">
+                    <a class="nav-help" href="/en-US/help">Help</a>
+                </li>
+                <li id="api-locale-options" class="country-selector has-menu dropdown">
+  <a href="#country-selector-dropdown" class="dropdown-toggle flag-en-US">English<i class="icon-pointer-down"></i></a>
+  <ul id="country-selector-dropdown" class="dropdown dropdown-menu pull-right" roll="menu" aria-labelledby="dLabel">
+          <li><a class="flag-ko-KR  language-links" data-locale="ko-KR" href="/ko-KR/" title="한국어">한국어</a></li><li><a class="flag-th-TH  language-links" data-locale="th-TH" href="/th-TH/" title="ไทย">ไทย</a></li><li><a class="flag-in-ID  language-links" data-locale="in-ID" href="/in-ID/" title="Bahasa Indonesia">Bahasa Indonesia</a></li><li><a class="flag-ms-MY  language-links" data-locale="ms-MY" href="/ms-MY/" title="Bahasa Melayu">Bahasa Melayu</a></li><li><a class="flag-cs-CZ  language-links" data-locale="cs-CZ" href="/cs-CZ/" title="Čeština">Čeština</a></li><li><a class="flag-da-DK  language-links" data-locale="da-DK" href="/da-DK/" title="Dansk">Dansk</a></li><li><a class="flag-de-DE  language-links" data-locale="de-DE" href="/de-DE/" title="Deutsch">Deutsch</a></li>
+      <li><a class="flag-en-US active language-links" data-locale="en-US" href="/en-US/" title="English">English</a></li><li><a class="flag-es-ES  language-links" data-locale="es-ES" href="/es-ES/" title="Español">Español</a></li><li><a class="flag-fr-FR  language-links" data-locale="fr-FR" href="/fr-FR/" title="Français">Français</a></li><li><a class="flag-hr-HR  language-links" data-locale="hr-HR" href="/hr-HR/" title="Hrvatski">Hrvatski</a></li><li><a class="flag-it-IT  language-links" data-locale="it-IT" href="/it-IT/" title="Italiano">Italiano</a></li><li><a class="flag-hu-HU  language-links" data-locale="hu-HU" href="/hu-HU/" title="Magyar">Magyar</a></li><li><a class="flag-nl-NL  language-links" data-locale="nl-NL" href="/nl-NL/" title="Nederlands">Nederlands</a></li>
+      <li><a class="flag-nb-NO  language-links" data-locale="nb-NO" href="/nb-NO/" title="Norsk">Norsk</a></li><li><a class="flag-pl-PL  language-links" data-locale="pl-PL" href="/pl-PL/" title="Polski">Polski</a></li><li><a class="flag-pt-BR  language-links" data-locale="pt-BR" href="/pt-BR/" title="Português (Brasil)">Português (Brasil)</a></li><li><a class="flag-pt-PT  language-links" data-locale="pt-PT" href="/pt-PT/" title="Português (Portugal)">Português (Portugal)</a></li><li><a class="flag-sk-SK  language-links" data-locale="sk-SK" href="/sk-SK/" title="Slovenčina">Slovenčina</a></li><li><a class="flag-sl-SI  language-links" data-locale="sl-SI" href="/sl-SI/" title="Slovenščina">Slovenščina</a></li><li><a class="flag-fi-FI  language-links" data-locale="fi-FI" href="/fi-FI/" title="Suomi">Suomi</a></li>
+      <li><a class="flag-sv-SE  language-links" data-locale="sv-SE" href="/sv-SE/" title="Svenska">Svenska</a></li><li><a class="flag-iw-IL  language-links" data-locale="iw-IL" href="/iw-IL/" title="עברית">עברית</a></li><li><a class="flag-el-GR  language-links" data-locale="el-GR" href="/el-GR/" title="Ελληνικά">Ελληνικά</a></li><li><a class="flag-ru-RU  language-links" data-locale="ru-RU" href="/ru-RU/" title="Русский">Русский</a></li><li><a class="flag-ja-JP  language-links" data-locale="ja-JP" href="/ja-JP/" title="日本語">日本語</a></li><li><a class="flag-zh-CN  language-links" data-locale="zh-CN" href="/zh-CN/" title="简体中文">简体中文</a></li><li><a class="flag-zh-TW  language-links" data-locale="zh-TW" href="/zh-TW/" title="繁體中文">繁體中文</a></li>
+      </ul><!-- eo: .dropdown -->
+</li>		<li class="nav-signout-container">
+                    <a class="nav-signout" href="/auth/logout">Sign Out</a>
+                </li>
+            </ul>
+        </div>    </div>
+</div>    
+
+
+        <!-- Content Container -->
+        
+<div class="content clearfix">
+
+    <script>
+
+
+
+        
+
+    
+    
+        VIEWER_USERPREFERENCES = null;
+    
+
+
+        
+
+    
+    
+        VIEWER_SOCIAL_PROFILE = null;
+    
+
+
+        
+
+    
+    
+        var VIEWER_DASHBOARDS = null;
+    
+
+
+        
+
+    
+    
+        var appConfig = null;
+    
+
+
+        
+
+    
+    
+        var queueNotificationTimeout = null;
+    
+
+
+        
+
+    
+    
+        var queuePollRate = null;
+    
+
+
+        
+
+    
+    
+        var USER_MIGRATED = false;
+    
+
+
+        
+        
+
+    
+        var ERROR_VIEW = "resourceNotFoundRoute"
+    
+    
+
+
+        
+        
+
+    
+    
+        var USER_PROFILE = null;
+    
+
+
+
+
+
+        var SYSTEM_TIME_GMT = null;
+        var ENABLE_ADRUM = null;
+        var SESSION_LENGTH = 900 * 1000;
+        var GAUTH_HOST = 'https://sso.garmin.com/sso';
+        var GARMIN_APP_URL = null;
+        var WEB_TOKEN = null !== null ? "null" : "";
+        var URL_BUST_VALUE = '4.13C.2.0';
+
+        require.config({
+            baseUrl: '/modern/main/js',
+            urlArgs: 'bust=4.13C.2.0'
+        });
+
+        var codeSplitEnabled = null;
+        var require1 = ['common'];
+        var require2 = [
+            'backbone',
+            'models/user/ViewerSocialProfile',
+            'models/user/ViewerUserPreferences',
+            'collections/dashboard/Dashboards',
+            'utils/date/DateUtil',
+            'routers/MainRouter',
+            'web-react/static/js/bundle',
+            'twitterbootstrap'
+        ];
+
+        if(codeSplitEnabled) {
+            require1 = require1.concat([
+                '/web-react/static/js/ui-connect.js',
+                '/web-react/static/js/vendor.js',
+            ]);
+
+            require2 = [
+                'backbone',
+                'models/user/ViewerSocialProfile',
+                'models/user/ViewerUserPreferences',
+                'collections/dashboard/Dashboards',
+                'utils/date/DateUtil',
+                'routers/MainRouter',
+                '/web-react/static/js/bundle.js',
+                'twitterbootstrap'
+            ]
+        }
+
+        require(require1, function(common) {
+            require(require2,
+                function(Backbone, socialProfile, userPreferences, Dashboards, DateUtil, MainRouter) {
+
+                    window.handleMobileView = function() {
+                        // UX functionality
+                        var windowWidth = $(window).width();
+
+                        /*<![CDATA[*/
+
+                        if (windowWidth <= 670) {
+                            $('body').addClass('mobile').removeClass('minimize-main-nav');
+                        } else {
+                            $('body').removeClass('mobile mobile-open-main-nav');
+                        }
+
+                        /*]]>*/
+                    };
+
+                    window.handleMobileView();
+
+                    // Lazy load our 3rd party scripts
+                    require(['tealium'], function()  {});
+
+
+                    var viewerIsAuthenticated = null;
+
+                    // Set the system time so that we can have reasonably accurate timestamps
+                    DateUtil.setSystemTime(SYSTEM_TIME_GMT);
+
+                    jQuery.ajaxSetup({
+                        cache: false
+                    });
+
+                    if (viewerIsAuthenticated) {
+                        var dashboards = new Dashboards(VIEWER_DASHBOARDS, {displayName: socialProfile.get('displayName')});
+                    }
+
+                    // We've mistakenly referenced Window instead of window. Temporary hack to get Safari to load
+                    // until we can replace all references to Window with window.
+                    if (typeof Window == 'undefined') {
+                        Window = {};
+                    }
+
+                    Window.App = new MainRouter({
+                        userPreferences: userPreferences,
+                        userProfile: socialProfile,
+                        dashboards: dashboards,
+                        propertyFiles: appConfig.propertyFiles,
+                        contextPath: '/modern/',
+                        urlBustValue: '4.13C.2.0',
+                        viewerIsAuthenticated: viewerIsAuthenticated,
+                        gAuthHost: GAUTH_HOST,
+                        sessionLength: SESSION_LENGTH,
+                        webToken: WEB_TOKEN
+                    });
+
+                    App = Window.App;
+
+                    var i = 0;
+                    _.each(appConfig.routes, function(route) {
+                        require([route], function() {
+                            i++;
+
+                            if (i == appConfig.routes.length) {
+                                Backbone.history.start({pushState: true, root: '/modern/'});
+                            }
+
+                        }, function() {
+                            i++;
+
+                            if (i == appConfig.routes.length) {
+                                Backbone.history.start({pushState: true, root: '/modern/'});
+                            }
+                        });
+                    });
+
+
+                });
+
+        });
+
+
+    </script>
+</div>
+
+        <!-- END .content -->
+
+        <!-- Footer -->
+        <footer class="footer clearfix">
+	<style>
+.homepage .footer {
+  margin-bottom: 80px;
+}
+
+
+/* Cookie preference link in footer */
+#cookie_preferences {
+  display: inline;
+}
+
+#cookie_preferences a {
+  white-space: nowrap;
+}
+
+
+/* Implicit cookie banner */
+#consent_blackbar {
+  position: fixed;
+  z-index: 110;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #333;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: 'Open Sans','HelveticaNeue','HelveticaNeueu',Arial,sans-serif;
+}
+
+#truste-consent-track {
+display: block;
+}
+
+#truste-consent-content {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+/*  padding: 10px; */
+}
+
+#truste-consent-text {
+  margin: 0 1.0rem 0 0;
+}
+
+#truste-consent-buttons {
+  display:flex;
+  flex-direction: row;
+}
+
+#truste-consent-button,
+#truste-show-consent {
+  font-family: 'Open Sans','HelveticaNeue','HelveticaNeueu',Arial,sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color: #4a4a4a;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 12px 0;
+  border-radius: 4px;
+  border: none;
+}
+
+#truste-show-consent {
+  margin-left: 1rem;
+}
+
+#truste-consent-button:hover,
+#truste-show-consent:hover {
+  background-color: #4a4a4a;
+}
+
+#truste-cookie-button {
+  color: #fff;
+  margin: 1.0rem;
+  line-height: 2;
+}
+
+@media (max-width: 1024px) {
+  #truste-consent-content {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #truste-consent-text {
+    margin: 20px 20px 10px;
+    text-align: center;
+  }
+  #truste-consent-buttons {
+    display: block;
+    text-align: center;
+  }
+  #truste-consent-button,
+  #truste-show-consent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 5px 0;
+  }
+  #truste-cookie-button {
+    display: inline-block;
+    margin: auto;
+    padding: 15px;
+  }
+  #truste-show-consent {
+    margin-left: 0;
+  }
+}
+
+
+/* Explicit consent modal */
+.truste_overlay {
+  background: #fff !important;
+  opacity: 0.8 !important;
+}
+.truste_box_overlay {
+  background: none !important;
+}
+.truste_box_overlay_inner {
+  border: 3px solid #e8e8e8;
+}
+</style>
+
+            <div class="legal pull-left">
+                <div class="footer-nav">
+                    
+                    <a class="" href="/en-US/help" target="footer_link">Help</a>
+                    
+                    <a class="" href="/en-US/status" target="footer_link">Status</a>
+                    
+                    <a class="footer-facebook" href="https://www.facebook.com/garminfit" target="footer_link">Facebook</a>
+                    
+                    <a class="footer-instagram" href="https://www.instagram.com/garminfitness/" target="footer_link">Instagram</a>
+                    
+                    <a class="footer-twitter" href="https://twitter.com/GarminFitness" target="footer_link">Twitter</a>
+                    
+                    <a class="" href="https://www.garmin.com/en-US/privacy/connect/" target="footer_link">Statement of Privacy</a>
+                    
+                    <a class="" href="http://www.garmin.com/terms" target="footer_link">Terms of Use</a>
+                    
+                    <a class="" href="https://www.garmin.com/en-US/legal/security" target="footer_link">Security</a>
+                    
+		    <!-- Cookie Preferences Link and Script -->
+		    <span id="cookie_preferences" style="display:none;">
+                        <script type="text/javascript" async="async" src="https://consent.truste.com/notice?domain=garmin.com&c=cookie_preferences&js=bb&noticeType=bb&text=true" crossorigin=""></script>
+                    </span>
+
+		    <!-- Cookie Banner -->
+		    <div id="consent_blackbar"></div>
+
+
+                </div>
+                <div class="details">
+                    Connect is powered by <a href="http://www.garmin.com" target="_blank">Garmin</a> <span id="copyright" class="copyright">Copyright &copy; 1996-2014 Garmin Ltd. or its subsidiaries</span>
+                    <span class="version"></span>
+                                    </div>
+                <script type="text/javascript">document.getElementById('copyright').innerHTML = document.getElementById('copyright').innerHTML.replace(/-(\d{4})/g,'-'+parseInt(new Date().getFullYear()));</script>
+            </div>        <div class="activity-tracking-wrapper pull-right">
+		<a href="http://www.garmin.com/en-US/legal/atdisclaimer" class="activity-tracking-disclaimer" target="_blank">Activity Tracking Accuracy</a>
+	</div>
+</footer>
+        <!-- END .footer -->
+        <p style="display: none;">Served By: c86a66b0363d01bcb95df6159bee9f07 - Version: 4.13C.2.0</p>
+    </div>
+
+    <!-- END .container -->
+</div>
+
+<style>
+    .privacy-overlay {
+        position: fixed; /* Sit on top of the page content */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 9999; /* Specify a stack order in case you're using a different order for other elements */
+    }
+</style>
+
+<div id="overlay" class="privacy-overlay">
+</div>
+
+<script>
+    var copyright = document.getElementById("copyright");
+    if (copyright) {
+        copyright.innerHTML = copyright.innerHTML + ' • Version: ' + '4.13C.2.0';
+    }
+</script>
+
+</body>
+
+
+
+</html>
+BaseKonnector: info : The connector has been run
+Done in 5.91s.
